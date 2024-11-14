@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(7, 7, 57);
+  margin: 0;
+  font-family: Poppins;
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vw;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 50px,
+      #fff1 50px 51px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 50px, #fff1 50px 51px);
+  position: relative;
+}
+
+form {
+  background-color: #eee;
+  width: max-content;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 24px;
+  display: flex;
+  gap: 10px;
+}
+
+form input,
+button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+}
+
+form input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+form input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+#list textarea {
+  all: unset;
+  color: #d6d6d6;
+  overflow-wrap: break-word;
+}
+
+#list .note {
+  background-color: #333;
+  width: max-content;
+  border-top: 30px solid #e6b905;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px #0004;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+#list .note span {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  font-family: cursive;
+  font-size: large;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.note {
+  position: absolute;
+  cursor: grab;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s;
+}
+
+.note:active {
+  cursor: grabbing;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
